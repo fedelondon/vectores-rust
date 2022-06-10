@@ -6,8 +6,15 @@ pub mod vector{
             v.push(num);
         }
 
-        for i in v {
+        for i in &v {
             println!("{}",i);
+        }
+
+        println!("El segundo elemento del vector es: {}", &v[1]);
+
+        match v.get(3) {
+            Some(v) => println!("El tercer elemento del vector es: {}", v),
+            None => println!("No hay tercer elemento en el vector"),
         }
 }
 }
