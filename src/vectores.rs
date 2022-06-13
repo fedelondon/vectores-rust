@@ -12,7 +12,7 @@ pub mod vector{
 
         println!("El segundo elemento del vector es: {}", &v[1]);
 
-        match v.get(3) {
+        match v.get(2) {
             Some(v) => println!("El tercer elemento del vector es: {}", v),
             None => println!("No hay tercer elemento en el vector"),
         }
